@@ -56,5 +56,7 @@
                 "OpenSearch\\ScoutDriverPlus\\ServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
