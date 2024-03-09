@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Elastic\ScoutDriverPlus\Factories;
+namespace OpenSearch\ScoutDriverPlus\Factories;
 
-use Elastic\ScoutDriver\Factories\DocumentFactory as BaseDocumentFactory;
+use OpenSearch\ScoutDriver\Factories\DocumentFactory as BaseDocumentFactory;
 use Illuminate\Support\Collection as BaseCollection;
 
 class DocumentFactory extends BaseDocumentFactory

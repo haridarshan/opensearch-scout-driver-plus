@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Elastic\ScoutDriverPlus\Jobs;
+namespace OpenSearch\ScoutDriverPlus\Jobs;
 
-use Elastic\Adapter\Documents\DocumentManager;
-use Elastic\Adapter\Documents\Routing;
-use Elastic\ScoutDriverPlus\Factories\RoutingFactoryInterface;
+use OpenSearch\Adapter\Documents\DocumentManager;
+use OpenSearch\Adapter\Documents\Routing;
+use OpenSearch\ScoutDriverPlus\Factories\RoutingFactoryInterface;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Database\Eloquent\Model;
@@ -31,7 +31,7 @@ final class RemoveFromSearch implements ShouldQueue
     public function handle(DocumentManager $documentManager): void
     {
         /** @var bool $refreshDocuments */
-        $refreshDocuments = config('elastic.scout_driver.refresh_documents');
+        $refreshDocuments = config('opensearch.scout_driver.refresh_documents');
         $documentManager->delete($this->indexName, $this->documentIds, $refreshDocuments, $this->routing);
     }
 }

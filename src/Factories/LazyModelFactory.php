@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Elastic\ScoutDriverPlus\Factories;
+namespace OpenSearch\ScoutDriverPlus\Factories;
 
-use Elastic\Adapter\Search\Hit as BaseHit;
-use Elastic\Adapter\Search\SearchResult as BaseSearchResult;
+use OpenSearch\Adapter\Search\Hit as BaseHit;
+use OpenSearch\Adapter\Search\SearchResult as BaseSearchResult;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection as BaseCollection;
 

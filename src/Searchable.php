@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Elastic\ScoutDriverPlus;
+namespace OpenSearch\ScoutDriverPlus;
 
 use Closure;
-use Elastic\ScoutDriverPlus\Builders\QueryBuilderInterface;
-use Elastic\ScoutDriverPlus\Builders\SearchParametersBuilder;
+use OpenSearch\ScoutDriverPlus\Builders\QueryBuilderInterface;
+use OpenSearch\ScoutDriverPlus\Builders\SearchParametersBuilder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Collection as BaseCollection;
 use Laravel\Scout\Searchable as BaseSearchable;

@@ -1,7 +1,7 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Method Elastic\\\\ScoutDriverPlus\\\\Builders\\\\SearchParametersBuilder\\:\\:resolveJoinedIndexName\\(\\) should return string but returns mixed\\.$#"
+			message: "#^Method OpenSearch\\\\ScoutDriverPlus\\\\Builders\\\\SearchParametersBuilder\\:\\:resolveJoinedIndexName\\(\\) should return string but returns mixed\\.$#"
 			count: 1
 			path: src/Builders/SearchParametersBuilder.php
 
@@ -16,7 +16,7 @@ parameters:
 			path: src/Engine.php
 
 		-
-			message: "#^Method Elastic\\\\ScoutDriverPlus\\\\Factories\\\\ModelFactory\\:\\:makeFromIndexNameAndDocumentIds\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Collection but returns array\\<Illuminate\\\\Database\\\\Eloquent\\\\Builder\\>\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\.$#"
+			message: "#^Method OpenSearch\\\\ScoutDriverPlus\\\\Factories\\\\ModelFactory\\:\\:makeFromIndexNameAndDocumentIds\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Collection but returns array\\<Illuminate\\\\Database\\\\Eloquent\\\\Builder\\>\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\.$#"
 			count: 1
 			path: src/Factories/ModelFactory.php
 
@@ -31,7 +31,7 @@ parameters:
 			path: src/Jobs/RemoveFromSearch.php
 
 		-
-			message: "#^Method Elastic\\\\ScoutDriverPlus\\\\NullEngine\\:\\:map\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Collection but returns Illuminate\\\\Support\\\\Collection\\<\\*NEVER\\*, \\*NEVER\\*\\>\\.$#"
+			message: "#^Method OpenSearch\\\\ScoutDriverPlus\\\\NullEngine\\:\\:map\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Collection but returns Illuminate\\\\Support\\\\Collection\\<\\*NEVER\\*, \\*NEVER\\*\\>\\.$#"
 			count: 1
 			path: src/NullEngine.php
 
