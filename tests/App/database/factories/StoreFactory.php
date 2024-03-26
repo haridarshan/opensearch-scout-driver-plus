@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-use Elastic\ScoutDriverPlus\Tests\App\Store;
+use OpenSearch\ScoutDriverPlus\Tests\App\Store;
 use Faker\Generator as Faker;
 use Illuminate\Database\Eloquent\Factory;
 

@@ -1,28 +1,28 @@
 <?php declare(strict_types=1);
 
-namespace Elastic\ScoutDriverPlus\Tests\Integration;
+namespace OpenSearch\ScoutDriverPlus\Tests\Integration;
 
-use Elastic\Adapter\Documents\DocumentManager;
-use Elastic\Adapter\Indices\IndexManager;
-use Elastic\Adapter\Search\SearchResult;
-use Elastic\ScoutDriverPlus\Builders\SearchParametersBuilder;
-use Elastic\ScoutDriverPlus\Engine;
-use Elastic\ScoutDriverPlus\NullEngine;
-use Elastic\ScoutDriverPlus\Tests\App\Author;
+use OpenSearch\Adapter\Documents\DocumentManager;
+use OpenSearch\Adapter\Indices\IndexManager;
+use OpenSearch\Adapter\Search\SearchResult;
+use OpenSearch\ScoutDriverPlus\Builders\SearchParametersBuilder;
+use OpenSearch\ScoutDriverPlus\Engine;
+use OpenSearch\ScoutDriverPlus\NullEngine;
+use OpenSearch\ScoutDriverPlus\Tests\App\Author;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\LazyCollection;
 use Laravel\Scout\Builder;
 
 /**
- * @covers \Elastic\ScoutDriverPlus\NullEngine
+ * @covers \OpenSearch\ScoutDriverPlus\NullEngine
  *
- * @uses   \Elastic\ScoutDriverPlus\Builders\DatabaseQueryBuilder
- * @uses   \Elastic\ScoutDriverPlus\Builders\SearchParametersBuilder
- * @uses   \Elastic\ScoutDriverPlus\Decorators\SearchResult
- * @uses   \Elastic\ScoutDriverPlus\Engine
- * @uses   \Elastic\ScoutDriverPlus\Factories\LazyModelFactory
- * @uses   \Elastic\ScoutDriverPlus\Factories\ModelFactory
- * @uses   \Elastic\ScoutDriverPlus\Searchable
+ * @uses   \OpenSearch\ScoutDriverPlus\Builders\DatabaseQueryBuilder
+ * @uses   \OpenSearch\ScoutDriverPlus\Builders\SearchParametersBuilder
+ * @uses   \OpenSearch\ScoutDriverPlus\Decorators\SearchResult
+ * @uses   \OpenSearch\ScoutDriverPlus\Engine
+ * @uses   \OpenSearch\ScoutDriverPlus\Factories\LazyModelFactory
+ * @uses   \OpenSearch\ScoutDriverPlus\Factories\ModelFactory
+ * @uses   \OpenSearch\ScoutDriverPlus\Searchable
  */
 final class NullEngineTest extends TestCase
 {
